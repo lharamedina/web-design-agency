@@ -1,19 +1,24 @@
 body {
-    margin: 0;
+    background-color: #faf9f6;
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: 'Poppins', sans-serif;
-    padding: 0 50px;
 }
 
-#mainContainer {}
+#mainContainer {
+    flex: 1;
+}
 
 .logo {
-    width: 200px;
+    width: 300px;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 700;
-    margin: 0;
+    margin-top: 0;
 }
 
 .creative {
@@ -21,9 +26,8 @@ h1 {
 }
 
 .card {
-    /* display: inline-block; */
-    width: 50%;
-    padding-top: 30px;
+    width: 45%;
+    text-align: justify;
 }
 
 .left {
@@ -37,23 +41,44 @@ h1 {
 .title-image {
     width: 200px;
     float: left;
-    padding-right: 40px;
+    margin-right: 50px;
 }
 
-.card-title {
-    font-weight: 700;
-}
-
+.card-title,
 .card-text {
-    font-weight: 400;
+    margin: 0;
 }
 
 footer {
-    clear: both;
-}
-
-footer p {
     font-weight: 600;
     text-align: right;
     color: midnightblue;
+}
+
+@media (max-width: 680px) {
+    body {
+        margin: 0 20px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .card img {
+        margin-bottom: 10px;
+        width: 100%;
+        display: inline;
+        object-fit: cover;
+    }
 }

@@ -9,6 +9,7 @@ body {
 
 #mainContainer {
     flex: 1;
+    color: #222222;
 }
 
 .logo {
@@ -22,7 +23,7 @@ h1 {
 }
 
 .creative {
-    color: midnightblue;
+    color: #191970;
 }
 
 .card {
